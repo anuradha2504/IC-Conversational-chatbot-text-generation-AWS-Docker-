@@ -141,7 +141,7 @@ Below is the architecture representing:
 ## 📚 Example Output
 
 ### 🔹 LangChain Chat
-<img width="680" alt="LangChain Chat" src="https://github.com/user-attachments/assets/72998995-8d0d-40ba-ba5f-0be8970599a5" />
+<img width="680" alt="LangChain Chat" src="https://github.com/anuradha2504/IC-Text-generation-Chatbot-AWS-Docker/blob/main/AWS_deployment.docx" />
 
 ### 🔹 LlamaIndex Chat
 <img width="660" alt="LlamaIndex Chat" src="https://github.com/user-attachments/assets/0f3081bc-c616-4b9c-bc7f-a545e3ff528a" />
@@ -150,15 +150,14 @@ Below is the architecture representing:
 
 ## 🔐 Security Notes
 
-- ✅ API Keys are **never hardcoded** (stored in `.streamlit/secrets.toml`)
-- ✅ Isolated **multi-process container** with Supervisor
+- ✅ API Keys are **never hardcoded** 
 - ✅ AWS-level network security (controlled inbound rules)
 
 ---
 
 ## 📄 Repository & License
 
-🧾 **Repository:** [GitHub Link Here](#)  
+🧾 **Repository:** (https://github.com/anuradha2504/IC-Text-generation-Chatbot-AWS-Docker/tree/main) 
 🛡️ **License:** MIT License © 2025 — Open for educational and research use
 
 ---
