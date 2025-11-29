@@ -81,17 +81,16 @@ Access at 👉 **http://localhost:8501**
 
 ### Build Image
 ```bash
-docker build -t ai-frameworks-chatbot .
+sudo docker build -t gemini-story-api .
 ```
 
 ### Run Container
 ```bash
-docker run -d -p 8501:8501 -p 8000:8000 -p 8001:8001 ai-frameworks-chatbot
+sudo docker run -d -p 8001:8001 gemini-story-api
 ```
 
 Then open your browser at  
-👉 **http://localhost:8501**
-
+👉 **http://16.171.139.199:8001/docs/**
 ---
 
 ## ☁️ AWS EC2 Deployment (Free Tier Eligible)
@@ -130,23 +129,33 @@ Below is the architecture representing:
 
 ---
 
-## 🏁 Live Demo
 
 🌍 **Deployed Endpoint:**  
-[http://34.228.167.130:8501](http://34.228.167.130:8501)
+
+End Point -16.171.139.199:8001/docs/
 
 
 ---
 
 ## 📚 Example Output
 
-### 🔹 LangChain Chat
+### 🔹 Output responses
 <img width="680" alt="LangChain Chat" src="https://github.com/anuradha2504/IC-Text-generation-Chatbot-AWS-Docker/blob/main/AWS_deployment.docx" />
 
-### 🔹 LlamaIndex Chat
-<img width="660" alt="LlamaIndex Chat" src="https://github.com/user-attachments/assets/0f3081bc-c616-4b9c-bc7f-a545e3ff528a" />
-
 ---
+
+🧠 Application Logic
+The application uses a straightforward architecture:
+
+FastAPI receives the StoryRequest (prompt + token limit).
+
+The app constructs a payload for the Google Gemini API.
+
+It authenticates using the API Key configured in app.py.
+
+It sends a POST request to generativelanguage.googleapis.com.
+
+The generated text is extracted and returned as JSON.
 
 ## 🔐 Security Notes
 
@@ -158,6 +167,7 @@ Below is the architecture representing:
 ## 📄 Repository & License
 
 🧾 **Repository:** (https://github.com/anuradha2504/IC-Text-generation-Chatbot-AWS-Docker/tree/main) 
+
 🛡️ **License:** MIT License © 2025 — Open for educational and research use
 
 ---
